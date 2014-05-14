@@ -17,7 +17,7 @@
     <template id='profile-template'>
       <div class="profile">
         <div class="left">
-          <img src="{{ avatar_url }}"
+          <img src="{{ avatar_url }}" />
         </div>
 
         <div class="right">
@@ -36,12 +36,15 @@
     <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
     <script src='mustache.js'></script>
     <script>
-      $(document).ready(function(){
-        $.get('https://api.github.com/users/josephwolf', function(user){
+      $(document).ready(getDateFromApi("loulai"));
+    	
+    	function getDateFromApi(username){
+        $.get('https://api.github.com/users/' + username, function(user){
           var newProfile = Mustache.render($('#profile-template').html(), user);
           $('.profile-container').append(newProfile);
         })
-      });
+      };
+
     </script>
   </body>
 </html>
