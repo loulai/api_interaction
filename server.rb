@@ -1,5 +1,6 @@
 require 'sinatra'
 
 get '/' do
-	erb :playing
+	response['Access-Control-Allow-Origin'] = '*'
+	erb :main
 end
