@@ -1,10 +1,5 @@
 require 'sinatra'
 
 get '/' do
-	redirect to '/wham'
+	erb :playing
 end
-
-get '/wham' do
-	erb :main
-end
-
