@@ -5,9 +5,11 @@ experimenting with APIs
 
 I pair programmed with [Emma Williams], a fellow aspiring developer, to learn how to use APIs.
 
-This is a simple project that allows a user to add and view different github profiles.
+This is a simple project that allows a user to view and add different github profiles to a list. The list is hosted on a server and is styled.
 
-*jQuery*, *JSON*, *Mustache*, *Ajax* and *Javascript* are new-ish technologies that we hope, through this project, to become more familiar with.
+Through this project, we're aiming to get a better grasp of the fundamentals of *JSON*, *jQuery*,*Mustache*, *Ajax* and *Javascript*.
+
+Certain files have been edited and cloned from [this repository].
 
 **Tech**
 * HTML5
@@ -21,3 +23,4 @@ This is a simple project that allows a user to add and view different github pro
 * jQuery
 
 [Emma Williams]: https://github.com/Em01
+[this repository]:https://github.com/loulai/githubprofiles
