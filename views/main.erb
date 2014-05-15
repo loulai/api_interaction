@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <title>Github profiles</title>
@@ -36,14 +35,17 @@
     <script src='https://code.jquery.com/jquery-2.0.3.min.js'></script>
     <script src='mustache.js'></script>
     <script>
-      $(document).ready(getDateFromApi("loulai"));
     	
-    	function getDateFromApi(username){
+    	function getDataFromApi(username){
         $.get('https://api.github.com/users/' + username, function(user){
           var newProfile = Mustache.render($('#profile-template').html(), user);
           $('.profile-container').append(newProfile);
         })
       };
+
+        $(document).ready(function() {
+
+        });
 
     </script>
   </body>
